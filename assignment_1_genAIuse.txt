@@ -1,0 +1,3 @@
+ChatGPT-4o was used to debug the code when error were occuring.
+ChatGPT-4o was used to help in the writing of the tests for the function in the solver
+ChatGPT-4o was used to make the functions in the solver more clearly writtens
