@@ -3,12 +3,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "newtonsmethod"
+name = "assignment_1_new"
 version = "0.0.0"
 authors = [
   { name="Panagiotis Artemiou", email="artemiou@bu.edu" },
 ]
-description = "newtonsmethod workflow"
+description = "Workflow including newtonsmethod and materialmodels"
 readme = "README.md"
 license = { file="LICENSE" }
 requires-python = ">=3.9"
@@ -26,5 +26,12 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/Lejeune-Lab-Graduate-Course-Materials/bisection-method"
-"Bug Tracker" = "https://github.com/Lejeune-Lab-Graduate-Course-Materials/bisection-method/issues"
+"Homepage" = "https://github.com/Panagiotis-Artemiou/Assignment_1_new"
+"Bug Tracker" = "https://github.com/Panagiotis-Artemiou/Assignment_1_new/issues"
+
+[tool.pytest.ini_options]
+addopts = "--cov=src/newtonsmethod --cov=src/materialmodels --cov-report=xml"
+testpaths = [
+    "src/newtonsmethod",
+    "src/materialmodels"
+]
